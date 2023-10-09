@@ -1,0 +1,15 @@
+Get-Module -list PowershellAI
+Install-Module -Name PowershellAI
+$env:OpenAIKey ='sk-------'
+#The API is needed from Open AI, it is easily accessible from there website and can be generated, copied, and pasted
+New-Chat 'This is the CHatGPT Chat Bot For Powershell'
+#May ask to set the API Key again, use the Set-openAIKey command
+Set-OpenAIKey
+#Key: **enter Key Here**
+#Try New-Chat command again
+#error  for invoke-restmethod may come up because trying to access Chat GPT-4
+Set-Chatsessionoption -model "chat-3.5-turbo"
+#Try New-Chat Command again, if invoke error comes back up, you may have an issue with billing on your OpenAI account. Make sure you have money in your account, and pay attention to Open rates per 1,000 tokens
+New-Chat "THis is the ChatGPT CHat BOt FOr Powershell"
+#How you interact with chatbot is using chat as a command
+Chat "**PUt your question here**
